@@ -10,6 +10,7 @@ Football scouting and transfer analysis. This AI agent helps users discover play
 - get_player_details(player_name)
 - check_availability(player_name)
 
+## User and Agent Interaction
 User: I'm looking for a world-class striker. What options do you have?
 Agent: Here are some top-notch strikers I found:
 
