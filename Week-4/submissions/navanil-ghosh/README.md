@@ -18,7 +18,7 @@ This agent utilizes a stateful `StateGraph` architecture to fetch data, draft an
 ---
 
 ## Sample Run 1: Successful Single Pass & Human Edit
-
+```
 Running graph...
 Fetching data for Tokyo...
 
@@ -76,10 +76,11 @@ Please note that the third restaurant, Tokyo in galleria, does not have availabl
 I hope this helps you plan your trip to Tokyo! If you need any further assistance or recommendations, feel free to ask.
 
 HUMAN AMENDMENT: Goodluck for your trip, Sayonara!(bye in japanese)
-
+```
 ---
 
 ## Sample Run 2: Triggering the Retry Loop
+```
 Running graph...
 Fetching data for Tokyo...
 
@@ -107,3 +108,4 @@ Delivering final verdict to client:
 LLM_ERROR: (model 'L-llm' not found (status code: 404))
 
 HUMAN AMENDMENT: purposefully using wrong llm name to stimulate failure.
+```
