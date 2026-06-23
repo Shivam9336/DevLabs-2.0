@@ -75,7 +75,34 @@ Please note that the third restaurant, Tokyo in galleria, does not have availabl
 
 I hope this helps you plan your trip to Tokyo! If you need any further assistance or recommendations, feel free to ask.
 
- HUMAN AMENDMENT: Goodluck for your trip, Sayonara!(bye in japanese)
+HUMAN AMENDMENT: Goodluck for your trip, Sayonara!(bye in japanese)
 ---
 
 ## Sample Run 2: Triggering the Retry Loop
+Running graph...
+Fetching data for Tokyo...
+
+Prompting LLM with retrieved context...
+
+! LLM failed on attempt 1. Looping back to try again...
+
+Prompting LLM with retrieved context...
+
+! LLM failed on attempt 2. Looping back to try again...
+
+Prompting LLM with retrieved context...
+
+
+ HUMAN REVIEW NEEDED:
+LLM_ERROR: (model 'L-llm' not found (status code: 404))
+
+
+Type your edits here (or press ENTER to approve): purposefully using wrong llm name to stimulate failure.
+
+[Injecting edit into state...]
+
+Resuming graph...
+Delivering final verdict to client:
+LLM_ERROR: (model 'L-llm' not found (status code: 404))
+
+HUMAN AMENDMENT: purposefully using wrong llm name to stimulate failure.
