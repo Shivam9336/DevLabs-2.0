@@ -145,4 +145,5 @@ async def main():
         print("\nResuming graph...")
         await app.ainvoke(None, config=config)
 
-await main()
+if __name__ == "__main__":
+    asyncio.run(main())
