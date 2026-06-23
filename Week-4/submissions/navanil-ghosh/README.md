@@ -76,6 +76,7 @@ Please note that the third restaurant, Tokyo in galleria, does not have availabl
 I hope this helps you plan your trip to Tokyo! If you need any further assistance or recommendations, feel free to ask.
 
 HUMAN AMENDMENT: Goodluck for your trip, Sayonara!(bye in japanese)
+
 ---
 
 ## Sample Run 2: Triggering the Retry Loop
