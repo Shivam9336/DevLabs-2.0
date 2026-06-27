@@ -18,7 +18,6 @@ async def inventory_query_node(state: InventoryState) -> dict:
     system_prompt = (
         "You are a strict data extraction assistant for an inventory system. "
         "Extract search parameters based on two searchable columns: 'name' and 'color'. "
-        "CRITICAL: You must normalize slang or abbreviations into standard professional terms (e.g., 'mac' -> 'MacBook', 'silv' -> 'Silver'). "
         "Return ONLY a valid JSON dictionary."
     )
 
