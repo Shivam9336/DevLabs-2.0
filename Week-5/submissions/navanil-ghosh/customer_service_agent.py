@@ -290,3 +290,17 @@ main_graph.add_edge("synthesize", END)
 app = main_graph.compile()
 
 if __name__ == "__main__":
+    async def chat_loop():
+        print("Type 'exit' or 'quit' to close the terminal.\n")
+        while True:
+            user_input = input()
+            
+            if user_input.strip().lower() in ['exit', 'quit']:
+                print("\nShutting down agents... Goodbye!")
+                break
+            if not user_input.strip():
+                continue
+            final_state = await app.ainvoke({"query": user_input})
+            print(final_state["final_response"])
+
+    asyncio.run(chat_loop())
