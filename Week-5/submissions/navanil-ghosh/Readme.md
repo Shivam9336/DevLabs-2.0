@@ -51,7 +51,7 @@ quit
 
 Shutting down agents... Goodbye!
 ```
-### inventory.csv not available and the policy worker returns bad responce
+### 2. inventory.csv not available and the policy worker returns bad responce
 ```
 Type 'exit' or 'quit' to close the terminal.
 
