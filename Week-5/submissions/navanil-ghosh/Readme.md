@@ -26,7 +26,7 @@ The orchestrator triggers the workers concurrently using `asyncio.gather(..., re
 
 ## Sample Runs
 
-### 1. Parallel Execution
+### 1. Perfect Execution
 ```
 Type 'exit' or 'quit' to close the terminal.
 
@@ -47,6 +47,33 @@ According to our current inventory data, we do have the S24 in black and it is c
 Regarding our return policy, I can confirm that according to our company policy, all returns must be made within 14 days of purchase. Additionally, open box items may incur a 15% restocking fee. Please note that any items damaged by the user are not eligible for return.
 
 So, if you're interested in purchasing the S24 in black and have any questions about the return process or need further clarification on our policy, feel free to ask!
+quit
+
+Shutting down agents... Goodbye!
+```
+### inventory.csv not available and the policy worker returns bad responce
+```
+Type 'exit' or 'quit' to close the terminal.
+
+I need a white iPhone, and how many days do I have to return it?
+[Supervisor] Decomposing query...
+Inventory Task: white iPhone
+Policy Task: how many days do I have to return it
+[Inventory Worker] Extracting search parameters...
+[Policy Worker] retrieving policy document...
+[Policy Worker] Analyzing policy text...
+[Policy Worker] Verifying responce...
+[Inventory Worker] Querying CSV with Pandas...
+[Policy Worker] Analyzing policy text...    #loops
+[Policy Worker] Verifying responce...
+[Policy Worker] Analyzing policy text...    #loops again
+[Policy Worker] Verifying responce...
+[supervisor] merging the two responses
+I apologize, but our inventory database is currently offline, and we don't have any information on available products, including white iPhones.
+
+Regarding your return question, according to our Policy Document, you have 14 days from the date of purchase to return an item. Since there's no specific guidance for open box items or damaged items, it's best to follow this general guideline.
+
+Please note that we can't provide information on product availability at this time due to the database being offline. If you're interested in purchasing a white iPhone when our inventory becomes available, I recommend checking with us again.
 quit
 
 Shutting down agents... Goodbye!
